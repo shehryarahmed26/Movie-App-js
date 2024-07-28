@@ -17,7 +17,6 @@ nav {
     align-items: center;
     width: 100%;
     padding-inline: 40px;
-    /* margin-top: 10px; */
 }
 .logo {
     color: white;
@@ -46,7 +45,6 @@ input {
 }
 
 /*  *********************************Nav End ********************************************* */
-
 
 /* ********************************* Movies Container Start ******************************** */
 
@@ -97,7 +95,6 @@ input {
     width: 85%;
     padding-inline: 80px;
     padding-block: 20px;
-    /* position: relative; */
 }
 .movie-details {
     display: none;
@@ -158,8 +155,6 @@ footer {
     nav {
         flex-direction: column;
     }
-    
-    
     
     .movie-card {
         width: 95%;
