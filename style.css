@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {   
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  *********************************Nav Start ********************************************* */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 40px;
+    /* margin-top: 10px; */
+}
+.logo {
+    color: white;
+    background: linear-gradient(135deg, #e50914, #db0510);
+    padding: 5px;
+    border-radius: 6px;
+}
+.Search {
+    color: white;
+    background-color: rgb(203, 0, 0);
+    padding: 5px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+input {
+    padding: 5px;
+    border-radius: 2px;
+    margin-inline: 4px;
+    outline: none;
+    border: none;
+}
+.m-logo {
+    width: 230px;
+    margin-left: 100px;
+}
+
+/*  *********************************Nav End ********************************************* */
+
+
+/* ********************************* Movies Container Start ******************************** */
+
+.movies-container {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;   
+    margin-inline: auto;
+    position: relative;
+    overflow-y: hidden;
+}
+.movie-card {
+    width: 20%;
+    color: white;
+    text-align: center;
+}
+.movie-card img {
+    width: 100%;
+    min-height: 250px;
+}
+#title {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.genre {
+    color: rgb(27, 123, 202);
+    font-weight: 100;
+}
+
+/* ********************************* Movies Container End ******************************** */
+
+
+/* ********************************* Movies Details Box Start ******************************** */
+
+.movie-details {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 94);
+    width: 85%;
+    padding-inline: 80px;
+    padding-block: 20px;
+    /* position: relative; */
+}
+.movie-details {
+    display: none;
+}
+.right img {
+height: 400px;
+}
+.text-box {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: top;
+}
+.text-box p {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.text-box h3 {
+    font-size: 1.3rem;
+}
+.arrow {
+    position: relative;
+    top: -450px;
+    left: -340px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* ************************************ Footer ************************************************* */
+
+footer {
+    text-align: center;
+    color: white;
+}
+.credit a {
+    color: rgb(188, 188, 0);
+    text-decoration: none;
+}
+.pulse {
+    color: red;
+    margin-block: 10px;
+}
+.hr {
+    height: 0.5px;
+    width: 100%;
+    margin-block: 10px;
+    background-color: grey;
+}
+
+/* ********************************** Media query add for mobile devices  ************************ */
+@media (max-width: 550px) {
+    
+    /* nav */
+
+    .logo {
+        display: none;
+    }
+    nav {
+        flex-direction: column;
+    }
+    
+    
+    
+    .movie-card {
+        width: 95%;
+    }
+    .movie-details {
+        flex-direction: column;
+    }
+    .text-box p {
+        font-size: 0.7rem;
+    }
+    .text-box h3 {
+        font-size: 0.8rem;
+    }
+    .movie-details {
+        padding: 10px;
+    }
+    .right img {
+        height: 200px;
+        margin-top: 15px;
+    }
+    .text-box {
+        margin-bottom: 5px;
+    }
+    .arrow {
+        top: -480px;
+        left: 5px;
+        z-index: 11;
+        font-size: 1rem;
+    }
+    .credit {
+        font-weight: 100;
+        font-size: 0.7rem;
+    }
+    .m-logo {
+        margin-left: 0px;
+    }
+    input {
+        margin-inline: 0px;
+
+    }
+    
+}
