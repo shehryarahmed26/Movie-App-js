@@ -72,8 +72,11 @@ async function findmovie (movie) {
                     <div class="text-box">
                         <h3>Plot:</h3>
                         <p>${moviedata.Plot}</p>
-                    </div>
+                        <br>
+                        </div>
+                        <a class='download-btn' href='https://www.google.com/search?q=${input.value}+movie+download&oq=thor+movie+download&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgYIAhBFGEAyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgATSAQk3MzEwajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8/'>Download</a>
                      <i class="fa-solid fa-arrow-left arrow" onclick='remove_movie_detais()'></i>
+                     
                 </div>
     `
 }

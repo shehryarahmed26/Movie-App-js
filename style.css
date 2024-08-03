@@ -143,6 +143,16 @@ footer {
     margin-block: 10px;
     background-color: grey;
 }
+.download-btn {
+    color: rgb(12, 82, 136);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+.download-btn:hover {
+    color: rgb(28, 104, 202);
+}
 
 /* ********************************** Media query add for mobile devices  ************************ */
 @media (max-width: 550px) {
@@ -179,8 +189,8 @@ footer {
         margin-bottom: 5px;
     }
     .arrow {
-        top: -480px;
-        left: 5px;
+        top: -450px;
+        left: 8px;
         z-index: 11;
         font-size: 1rem;
     }
